@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cetrekan Lampu</title>
+  </head>
+
+  <body>
+    <div class="flex justify-center items-center min-h-screen w-full bg-gray-700 gap-5">
+      <!-- lampu 1 -->
+      <div class="flex flex-col gap-2">
+        <img id="lampu1" src="asset/img/off.gif" alt="" />
+        <button class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[10px] hover:text-black focus:outline-none focus:ring active:text-opacity-75 text-white" onclick="saklar('on',1)">
+          Nyalakan Ibon
+        </button>
+        <button class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[10px] hover:text-black focus:outline-none focus:ring active:text-opacity-75 text-white" onclick="saklar('off',1)">
+          Matikan Lampu
+        </button>
+      </div>
+      <!-- lampu 2 -->
+      <div class="flex flex-col gap-2">
+        <img id="lampu2" src="asset/img/off.gif" alt="" />
+        <button class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[10px] hover:text-black focus:outline-none focus:ring active:text-opacity-75 text-white" onclick="saklar('on',2)">
+          Nyalakan Lampu
+        </button>
+        <button class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[10px] hover:text-black focus:outline-none focus:ring active:text-opacity-75 text-white" onclick="saklar('off',2)">
+          Matikan Lampu
+        </button>
+      </div>
+      <!-- lampu3 -->
+      <div class="flex flex-col gap-2">
+        <img id="lampu3" src="asset/img/off.gif" alt="" />
+        <button class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[10px] hover:text-black focus:outline-none focus:ring active:text-opacity-75 text-white" onclick="saklar('on',3)">
+          Nyalakan Lampu
+        </button>
+        <button class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[10px] hover:text-black focus:outline-none focus:ring active:text-opacity-75 text-white" onclick="saklar('off',3)">
+          Matikan Lampu
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
